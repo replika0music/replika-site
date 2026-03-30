@@ -1,0 +1,47 @@
+/* ---- Load each of your fonts here ---- */
+/* Repeat this block for every font file you have */
+/* Replace "YourFont" and "YourFont.ttf" with your actual file names */
+
+@font-face {
+  font-family: 'Font1';
+  src: url('fonts/YourFont1.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Font2';
+  src: url('fonts/YourFont2.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Font3';
+  src: url('fonts/YourFont3.otf') format('opentype');
+}
+/* Add as many as you have */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#replika-text {
+  font-size: clamp(60px, 12vw, 160px);
+  font-family: 'Font1'; /* starting font */
+  color: #000000;
+  letter-spacing: 0.08em;
+  transition: font-family 0.4s ease;
+  user-select: none;
+}
